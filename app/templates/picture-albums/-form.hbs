@@ -1,0 +1,15 @@
+<form {{action "save" on="submit"}}>
+	<p> 
+		<label>Album Name:
+			{{input value=name}}
+		</label> 
+	</p>
+	<p>
+		<label> Description:
+			{{input value=description}}
+		</label>
+	</p>
+	
+	<input type="submit" value="Save" class="primary">
+    <button {{action "cancel"}}>Cancel</button>
+</form>
